@@ -1,0 +1,29 @@
+public class Manager1{
+	public static void main(String [] args){
+			Driver Jatt = new Driver();
+			Jatt.getGoing();
+		}
+}
+
+class Car{
+
+	public boolean startCar(){
+		System.out.println("The car has started");
+		return true;
+	}
+}
+
+class Driver{
+	
+	public Car bmw;
+	
+	
+	public Driver(){
+		bmw = new Car();
+    }
+	
+	
+	public void getGoing(){
+		bmw.startCar();
+	}
+}
